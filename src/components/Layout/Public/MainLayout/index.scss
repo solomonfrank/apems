@@ -1,0 +1,35 @@
+.ant-drawer-content.publicDrawer {
+  background-color: #747476;
+}
+
+.publicDrawer .ant-drawer-body {
+  padding: 0;
+}
+
+.publicSiderbarmenu.ant-menu-light {
+  background-color: #747476 !important;
+  color: #fff;
+  font-family: 'ttnorms' !important;
+  font-weight: 500;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.publicSiderbarmenu .ant-menu-item {
+  text-transform: capitalize;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 5.4rem !important;
+}
+
+.ant-menu.ant-menu-light .ant-menu-item-selected {
+  background-color: #ff4040 !important;
+  /* color:#282828 !important; */
+  color: #fff !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 120%;
+  //   padding-top: 2.2rem;
+  //   padding-bottom: 2.3rem;
+}

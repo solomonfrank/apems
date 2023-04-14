@@ -1,0 +1,128 @@
+.header {
+  width: 100vw;
+  position: relative;
+  background-color: #eaeaea;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  font-size: 1.6rem;
+  height: 100vh;
+}
+
+.navHeader {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.headerBannerr {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.section {
+  /* transform: translate(40%, 20vh); */
+  color: #fff;
+  margin: 15% auto;
+  padding: 2rem;
+  padding-top: 4rem;
+  margin-top: 200px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 999;
+}
+
+.section__caption {
+  color: #fff;
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+.section__caption__subpara {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1.7rem;
+}
+.support__call {
+  position: relative;
+  margin-top: 10rem;
+}
+.mouseImage {
+  position: relative;
+  margin-top: 3rem;
+  display: inline-block;
+}
+.support__call::before {
+  border: 1px dashed #d5d5d5;
+  content: '';
+  display: block;
+  height: 80px;
+  left: 50%;
+  position: absolute;
+  top: -120%;
+}
+.userAvatar {
+  position: absolute;
+  right: -10rem;
+  bottom: 1rem;
+}
+
+.meetingInput {
+  border: none;
+  color: rgba(0, 0, 0, 0.7);
+  flex: 1;
+  display: flex;
+  outline: none;
+  padding: 10px;
+  margin-right: auto;
+  width: 100%;
+}
+
+.meetingInput::placeholder {
+  color: #5c6574;
+}
+
+.meetingBtn {
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://res.cloudinary.com/solomonfrank/image/upload/v1655940341/apems/contour_ziqokq.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 'cover';
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0 0 40%;
+  padding: 2rem;
+  position: relative;
+  z-index: 99;
+}
+.meetingBtn::after {
+  background-color: rgba(217, 11, 44, 0.85);
+  border-radius: 5px;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -10;
+}
