@@ -1,7 +1,10 @@
+import { QueryClientProvider } from '@tanstack/react-query';
 import { Suspense } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router } from 'react-router-dom';
+
+import { queryClient } from '@/libs/react-query';
 
 type AppProviderProps = {
   children: React.ReactNode;
@@ -21,7 +24,9 @@ export const Approvider = ({ children }: AppProviderProps) => {
     <Suspense fallback={<div>Loading...</div>}>
       <ErrorBoundary FallbackComponent={ErrorFallback}>
         <HelmetProvider>
-          <Router>{children}</Router>
+          <QueryClientProvider client={queryClient}>
+            <Router>{children}</Router>
+          </QueryClientProvider>
         </HelmetProvider>
       </ErrorBoundary>
     </Suspense>
