@@ -45,10 +45,10 @@ const EventCards = ({
       // style={dStyle}
       onClick={() => navigate(`${url}`)}
     >
-      <img src={banner} alt={title} className={style.bannerImg} />
+      <img src={banner} alt={title} className={style.bannerImg} loading="lazy" />
       <div className={style.eventOverlay}></div>
       <div className={style.logoWrapper}>
-        <img className={style.logoImg} src={logo} alt={title} />
+        <img className={style.logoImg} src={logo} alt={title} loading="lazy" />
       </div>
 
       <div className={style.card__bottom}>
