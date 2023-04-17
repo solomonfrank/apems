@@ -154,6 +154,8 @@
 }
 .third__main__features__card_icon {
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
 }
 .third__main__features__card_ps::after {
   content: '';
