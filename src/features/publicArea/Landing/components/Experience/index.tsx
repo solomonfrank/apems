@@ -21,6 +21,16 @@ const Experience = () => {
           </div>
         </div>
         <div className={`expereince-section ${style.videoContainer}`}>
+          <div className={style.imgWrapper}>
+            <div className={style.overlay}></div>
+            <img
+              loading="lazy"
+              src="https://res.cloudinary.com/solomonfrank/image/upload/v1655940357/apems/virtualEvent_pl9pmi.webp"
+              alt="demo banner"
+              className={style.demoBanner}
+            />
+          </div>
+
           <button className={style.videoContainer_wrap} onClick={() => setVisible(true)}>
             <span className={style.videoContainer_wrap_iconBox}>
               <FaPlay size={20} color="gray" className={style.videoContainer_wrap_iconBox_icon} />
