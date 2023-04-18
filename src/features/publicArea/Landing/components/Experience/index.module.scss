@@ -64,17 +64,32 @@
 }
 .videoContainer {
   align-items: center;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('https://res.cloudinary.com/solomonfrank/image/upload/v1655940357/apems/virtualEvent_pl9pmi.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 10px;
   display: flex;
-  height: 50rem;
+  // height: 50rem;
   justify-content: center;
   margin-bottom: 10rem;
+  position: relative;
+
+  .imgWrapper {
+    // padding-bottom: 50%; /* 16:9 ratio */
+
+    position: relative;
+    width: 100%;
+    max-height: 90vh;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: red;
+
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16/9;
+    }
+  }
 
   &_wrap {
+    position: absolute;
     align-items: center;
     border: 3px solid #da2c1f;
     border-radius: 50%;
@@ -82,9 +97,10 @@
     display: flex;
     height: 8rem;
     justify-content: center;
-    position: relative;
     transition: border 0.2s ease-out;
     width: 8rem;
+    z-index: 999;
+    cursor: pointer;
     &_iconBox {
       align-items: center;
       background-color: rgba(255, 255, 255, 0.7);
@@ -126,6 +142,18 @@
       }
     }
   }
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 .youtubeContainer {
   height: 50rem;
