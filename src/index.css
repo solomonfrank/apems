@@ -34,6 +34,7 @@ body {
   font-weight: 400;
   font-family: ttnorms !important;
   -webkit-font-smoothing: antialiased;
+  font-size: 1.4rem;
 }
 /*
   6. Improve media defaults
@@ -47,6 +48,10 @@ img, picture, video, canvas, svg {
 */
 input, button, textarea, select {
   font: inherit;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 /*
   8. Avoid text overflows

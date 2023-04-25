@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ced0d5;
+  border-radius: 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: ttnorms;
+  input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 1.3rem;
+    font-size: 1.4rem;
+    flex-grow: 1;
+    &:focus {
+      background: none !important;
+      outline: none;
+    }
+
+    &::placeholder {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      /* identical to box height */
+      font-family: ttnorms;
+      letter-spacing: -0.01em;
+
+      color: #282828;
+    }
+  }
+}
