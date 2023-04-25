@@ -6,8 +6,6 @@ import { globalStorage } from '@/utils/storage';
 export const axios = Axios.create();
 
 const authRequestInterceptor = (config: InternalAxiosRequestConfig) => {
-  console.log('config', config);
-
   const token = globalStorage.getStore('access_token');
 
   if (token) {
